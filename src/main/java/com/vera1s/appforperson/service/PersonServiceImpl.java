@@ -47,9 +47,9 @@ public class PersonServiceImpl implements PersonService {
         }
         Optional<Person> persistPersonOptional = personRepository.findById(id);
         if (persistPersonOptional.isPresent()) { //если есть
-            Person persistCar = persistPersonOptional.get();
-            persistCar.setName(person.getName()); //в старую person устанавливаем новое имя
-            personRepository.save(persistCar); //пересохраняем старую person
+            Person persistPerson = persistPersonOptional.get();
+            persistPerson.setName(person.getName()); //в старую person устанавливаем новое имя
+            personRepository.save(persistPerson); //пересохраняем старую person
         }
 
     }

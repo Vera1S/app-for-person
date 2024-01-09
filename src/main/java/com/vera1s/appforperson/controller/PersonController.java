@@ -21,7 +21,7 @@ public class PersonController {
     }
 
     @PostMapping(value = "/person")
-    public void saveCar(@RequestBody Person person) {
+    public void savePerson(@RequestBody Person person) {
 
         personService.save(person);
     }
@@ -32,7 +32,7 @@ public class PersonController {
     }
 
     @PutMapping(value = "/person/{id}")
-    public void updateCarById(@PathVariable(value = "id") Integer id, @RequestBody Person person) {
+    public void updatePersonById(@PathVariable(value = "id") Integer id, @RequestBody Person person) {
         personService.update(id, person);
     }
 
