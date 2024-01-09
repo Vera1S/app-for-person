@@ -8,7 +8,7 @@ public interface PersonService {
 
     void save(Person person);
 
-    void delectById(Integer id);
+    void delecteById(Integer id);
 
     void update(Integer id, Person person);
 
