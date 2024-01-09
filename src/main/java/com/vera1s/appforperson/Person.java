@@ -13,6 +13,7 @@ import lombok.Data;
 @Entity
 @Table(name = "person")
 public class Person {
+
     @Id
     @Column(name = "id")
     private Integer id;
