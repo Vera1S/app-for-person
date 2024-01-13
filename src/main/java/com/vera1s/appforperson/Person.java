@@ -28,5 +28,5 @@ public class Person {
     private String password;
 
     @Column(name = "Status")
-    private String Status;
+    private Status status;
 }

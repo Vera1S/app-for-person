@@ -4,11 +4,11 @@ package com.vera1s.appforperson.controller;
 import com.vera1s.appforperson.Person;
 import com.vera1s.appforperson.service.PersonService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+
 import org.springframework.web.bind.annotation.*;
 
 
-@Service
+@RestController
 @RequiredArgsConstructor
 public class PersonController {
 
@@ -28,7 +28,7 @@ public class PersonController {
 
     @DeleteMapping(value = "/person/{id}")
     public void deleteById(@PathVariable(value = "id") Integer id) {
-        personService.delecteById(id);
+        personService.deleteById(id);
     }
 
     @PutMapping(value = "/person/{id}")

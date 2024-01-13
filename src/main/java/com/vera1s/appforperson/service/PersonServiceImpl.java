@@ -33,7 +33,7 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
-    public void delecteById(Integer id) {
+    public void deleteById(Integer id) {
         if (id == null) {
             return;
         }
