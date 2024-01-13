@@ -1,10 +1,6 @@
 package com.vera1s.appforperson;
 
-import ch.qos.logback.core.status.Status;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import lombok.Data;
 
@@ -27,6 +23,7 @@ public class Person {
     @Column(name = "password")
     private String password;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "Status")
     private Status status;
 }
